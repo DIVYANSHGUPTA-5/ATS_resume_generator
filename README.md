@@ -1,16 +1,109 @@
-# React + Vite
+# AI Resume Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered, ATS-friendly resume builder that helps users create, edit, analyze, and optimize professional resumes based on a target job description.
 
-Currently, two official plugins are available:
+The platform supports two workflows:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Upload & Edit Resume** — Upload an existing resume, extract its information, review/edit the extracted data, and generate an improved resume.
+- **Create Resume** — Build a resume from scratch using structured resume sections.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 📄 Upload & Edit Resume
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Upload an existing resume and automatically extract its information.
+
+The application identifies and populates:
+
+- Personal Information
+- Professional Summary
+- Education
+- Experience
+- Projects
+- Skills
+- Certifications
+- Achievements
+
+All extracted information remains editable before generating the final resume.
+
+Supported resume formats:
+
+- PDF
+- DOCX
+
+---
+
+### ✨ Create Resume From Scratch
+
+Users can manually create a resume using structured sections:
+
+- Personal Information
+- Professional Summary
+- Education
+- Experience
+- Projects
+- Skills
+- Certifications
+- Target Job Description
+
+---
+
+## 🎯 Job Match Score
+
+Users can provide a target job description and analyze how well their resume matches the job.
+
+The Job Match analysis considers:
+
+- Keyword Match
+- Skills Alignment
+- Section Structure
+- ATS Formatting
+
+The platform provides a score out of 100 along with suggestions for improving the resume's alignment with the target role.
+
+---
+
+## 📊 Resume Quality Analyzer
+
+The application evaluates the overall quality of the resume across multiple dimensions:
+
+- ATS Compatibility
+- Keyword Optimization
+- Content Quality
+- Formatting
+- Impact & Achievements
+- Readability
+
+It also provides:
+
+- Overall Resume Quality Score
+- Strengths
+- Areas to Improve
+- Actionable suggestions
+
+---
+
+## 🧠 Intelligent Resume Parsing
+
+Uploaded resumes are converted into structured resume data rather than being treated as plain text.
+
+The parser identifies logical resume sections and maps information into structured fields.
+
+For example:
+
+```text
+Resume
+   ↓
+Document Upload
+   ↓
+Text Extraction
+   ↓
+Resume Parsing
+   ↓
+Section Detection
+   ↓
+Structured Resume Data
+   ↓
+Editable Resume Form
